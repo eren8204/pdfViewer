@@ -13,7 +13,6 @@ A simple and easy-to-use Android library to render PDF files in your app. Just a
 - 📄 Render PDF files from assets or URL
 - ⚡ Lightweight and fast
 - 🛠 Easy integration
-- 🎨 Fully customizable appearance
 
 ---
 
