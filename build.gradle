@@ -14,7 +14,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'maven-publish'
 
 android {
-    namespace 'com.example.pdfviewer'
+    namespace 'com.eren8204.pdfviewer'
     compileSdk 34
 
     defaultConfig {
