@@ -38,11 +38,11 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
+            create("release", MavenPublication) {
                 from components.release
-                groupId 'com.github.eren8204'
-                artifactId 'PdfViewer'
-                version '1.0.0'
+                groupId = 'com.github.eren8204'
+                artifactId = 'PdfViewer'
+                version = '1.0.0'
             }
         }
     }
