@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eren8204.pdfviewer">
+
+    <application>
+        <activity
+            android:name=".PdfViewerActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
+    </application>
 
 </manifest>
