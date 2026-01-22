@@ -1,7 +1,7 @@
 # PDF Viewer Android Library
 
 [![GitHub](https://img.shields.io/badge/github-eren8204/pdfViewer-blue?style=for-the-badge)](https://github.com/eren8204/pdfViewer) 
-[![JitPack](https://img.shields.io/badge/JitPack-v1.0.0-blue?style=for-the-badge)](https://jitpack.io/#eren8204/pdfViewer/v1.0.0)
+[![](https://jitpack.io/v/eren8204/pdfViewer.svg)](https://jitpack.io/#eren8204/pdfViewer)
 [![License](https://img.shields.io/github/license/eren8204/pdfViewer?style=for-the-badge)](LICENSE)
 
 A simple and easy-to-use Android library to render PDF files in your app. Just add the dependency, and you're ready to display PDFs seamlessly.
@@ -56,7 +56,3 @@ pdfViewer.fromUrl("https://www.example.com/sample.pdf").load();
 
 # Contributing
 Contributions are welcome! Please feel free to submit issues or pull requests.
-
-## Badges
-
-[![](https://jitpack.io/v/eren8204/pdfViewer.svg)](https://jitpack.io/#eren8204/pdfViewer)
