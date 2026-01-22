@@ -55,9 +55,8 @@ pdfViewer.fromUrl("https://www.example.com/sample.pdf").load();
 ```
 
 ## Verify on Jitpack
-```
+
 [![](https://jitpack.io/v/eren8204/pdfViewer.svg)](https://jitpack.io/#eren8204/pdfViewer)
-```
 
 # Contributing
 Contributions are welcome! Please feel free to submit issues or pull requests.
