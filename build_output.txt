@@ -1,0 +1,184 @@
+> Task :checkKotlinGradlePluginConfigurationErrors
+> Task :preBuild UP-TO-DATE
+> Task :preReleaseBuild UP-TO-DATE
+> Task :generateReleaseResValues UP-TO-DATE
+> Task :generateReleaseResources UP-TO-DATE
+> Task :packageReleaseResources UP-TO-DATE
+> Task :parseReleaseLocalResources UP-TO-DATE
+> Task :generateReleaseRFile UP-TO-DATE
+> Task :compileReleaseKotlin NO-SOURCE
+> Task :javaPreCompileRelease UP-TO-DATE
+
+> Task :compileReleaseJavaWithJavac FAILED
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfPageAdapter.java:12: error: package androidx.recyclerview.widget does not exist
+import androidx.recyclerview.widget.RecyclerView;
+                                   ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfPageAdapter.java:17: error: package RecyclerView does not exist
+class PdfPageAdapter extends RecyclerView.Adapter<PdfPageAdapter.PdfViewHolder> {
+                                         ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfPageAdapter.java:53: error: package RecyclerView does not exist
+    class PdfViewHolder extends RecyclerView.ViewHolder {
+                                            ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:11: error: package androidx.appcompat.app does not exist
+import androidx.appcompat.app.AppCompatActivity;
+                             ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:12: error: package androidx.recyclerview.widget does not exist
+import androidx.recyclerview.widget.LinearLayoutManager;
+                                   ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:13: error: package androidx.recyclerview.widget does not exist
+import androidx.recyclerview.widget.RecyclerView;
+                                   ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:21: error: cannot find symbol
+class PdfViewerActivity extends AppCompatActivity {
+                                ^
+  symbol: class AppCompatActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfPageAdapter.java:27: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfPageAdapter.java:34: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfPageAdapter.java:39: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfPageAdapter.java:44: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfPageAdapter.java:46: error: cannot find symbol
+        super.onViewRecycled(holder);
+        ^
+  symbol:   variable super
+  location: class PdfPageAdapter
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:26: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:28: error: cannot find symbol
+        super.onCreate(savedInstanceState);
+        ^
+  symbol:   variable super
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:29: error: cannot find symbol
+        setContentView(R.layout.activity_pdf_viewer);
+        ^
+  symbol:   method setContentView(int)
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:31: error: cannot find symbol
+        RecyclerView recyclerView = findViewById(R.id.recyclerViewPdf);
+        ^
+  symbol:   class RecyclerView
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:31: error: cannot find symbol
+        RecyclerView recyclerView = findViewById(R.id.recyclerViewPdf);
+                                    ^
+  symbol:   method findViewById(int)
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:32: error: cannot find symbol
+        pageIndicator = findViewById(R.id.pageIndicator);
+                        ^
+  symbol:   method findViewById(int)
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:33: error: cannot find symbol
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+                                          ^
+  symbol:   class LinearLayoutManager
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:35: error: cannot find symbol
+        String fileName = getIntent().getStringExtra("fileName");
+                          ^
+  symbol:   method getIntent()
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:38: error: no suitable method found for makeText(PdfViewerActivity,String,int)
+            Toast.makeText(this, "No PDF file provided", Toast.LENGTH_SHORT).show();
+                 ^
+    method Toast.makeText(Context,CharSequence,int) is not applicable
+      (argument mismatch; PdfViewerActivity cannot be converted to Context)
+    method Toast.makeText(Context,int,int) is not applicable
+      (argument mismatch; PdfViewerActivity cannot be converted to Context)
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:39: error: cannot find symbol
+            finish();
+            ^
+  symbol:   method finish()
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:44: error: cannot find symbol
+            boolean isAsset = getIntent().getBooleanExtra("isAsset", true);
+                              ^
+  symbol:   method getIntent()
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:52: error: no suitable method found for makeText(PdfViewerActivity,String,int)
+                    Toast.makeText(this, "File does not exist", Toast.LENGTH_SHORT).show();
+                         ^
+    method Toast.makeText(Context,CharSequence,int) is not applicable
+      (argument mismatch; PdfViewerActivity cannot be converted to Context)
+    method Toast.makeText(Context,int,int) is not applicable
+      (argument mismatch; PdfViewerActivity cannot be converted to Context)
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:53: error: cannot find symbol
+                    finish();
+                    ^
+  symbol:   method finish()
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:66: error: package RecyclerView does not exist
+            recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+                                                             ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:68: error: cannot find symbol
+                public void onScrolled(@NonNull RecyclerView rv, int dx, int dy) {
+                                                ^
+  symbol: class RecyclerView
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:67: error: method does not override or implement a method from a supertype
+                @Override
+                ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:69: error: cannot find symbol
+                    super.onScrolled(rv, dx, dy);
+                    ^
+  symbol: variable super
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:70: error: cannot find symbol
+                    LinearLayoutManager lm = (LinearLayoutManager) rv.getLayoutManager();
+                    ^
+  symbol: class LinearLayoutManager
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:70: error: cannot find symbol
+                    LinearLayoutManager lm = (LinearLayoutManager) rv.getLayoutManager();
+                                              ^
+  symbol: class LinearLayoutManager
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:79: error: no suitable method found for makeText(PdfViewerActivity,String,int)
+            Toast.makeText(this, "Failed to load PDF", Toast.LENGTH_SHORT).show();
+                 ^
+    method Toast.makeText(Context,CharSequence,int) is not applicable
+      (argument mismatch; PdfViewerActivity cannot be converted to Context)
+    method Toast.makeText(Context,int,int) is not applicable
+      (argument mismatch; PdfViewerActivity cannot be converted to Context)
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:81: error: cannot find symbol
+            finish();
+            ^
+  symbol:   method finish()
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:86: error: cannot find symbol
+        File file = new File(getCacheDir(), fileName);
+                             ^
+  symbol:   method getCacheDir()
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:88: error: cannot find symbol
+            try (InputStream asset = getAssets().open(fileName);
+                                     ^
+  symbol:   method getAssets()
+  location: class PdfViewerActivity
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:108: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+D:\AndroidStudioProjects\Payment-app\PdfViewer\src\main\java\com\eren8204\pdfviewer\PdfViewerActivity.java:110: error: cannot find symbol
+        super.onDestroy();
+        ^
+  symbol:   variable super
+  location: class PdfViewerActivity
+37 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileReleaseJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 1s
+8 actionable tasks: 2 executed, 6 up-to-date
